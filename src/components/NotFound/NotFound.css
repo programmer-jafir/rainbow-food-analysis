@@ -1,0 +1,22 @@
+.flexible-container{
+    display: flex;
+    margin-bottom: 100px;
+    align-items: center;
+}
+.half-width{
+    width: 80%;
+    padding: 5%;
+}
+.half-width img{
+    width: 100%;
+    border-radius: 250px;
+}
+.header-title{
+    font-weight: bold;
+    color: rgba(255, 0, 0, 0.814);
+}
+.paragraph{
+    font-weight: bold;
+    color: rgba(110, 101, 98, 0.742);
+    margin-left: 40px;
+}

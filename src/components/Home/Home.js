@@ -8,7 +8,7 @@ import './Home.css'
 const Home = () => {
     return (
         <div>
-            <div className='header-banner flexible-container'>
+            <div className='flexible-container'>
                 <div className='half-width'>
                     <h1 className='title'>Welcome to Rainbow food shop</h1>
                     <p className='paragraph'>This is a online food store.You can order various type of food.There are thousand people like our servise. What are you waiting for let's checkout.</p>
