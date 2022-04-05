@@ -5,7 +5,7 @@ const useReatings = () =>{
     useEffect( () =>{
         fetch('reatings.json')
         .then(res => res.json())
-        .then(data => console.log(data));
+        .then(data => setreatings(data));
     }, []);
     return [reatings, setreatings];
 }

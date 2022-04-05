@@ -1,0 +1,9 @@
+.review{
+    height: 130px;
+    width: 400px;
+    border: 1px solid ;
+    border-radius: 20px;
+    background-color: blueviolet;
+    color: bisque;
+    font-weight: bold;
+}

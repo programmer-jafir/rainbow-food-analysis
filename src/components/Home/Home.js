@@ -19,7 +19,7 @@ const Home = () => {
             </div>
             <Review></Review>
             <Link to='/review'>
-                <button>See All Reviews</button>
+                <button className='review-btn'>See All Reviews</button>
             </Link>
         </div>
     );

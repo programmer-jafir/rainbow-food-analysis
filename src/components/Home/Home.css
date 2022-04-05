@@ -23,3 +23,12 @@
     font-weight: bold;
     color: rgba(75, 69, 69, 0.533);
 }
+.review-btn{
+    border-radius: 5px;
+    background-color: rgba(137, 43, 226, 0.851);
+    color: beige;
+}
+.review-btn:hover{
+    font-weight: bold;
+    background-color: blueviolet;
+}
