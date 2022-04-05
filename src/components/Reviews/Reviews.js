@@ -1,13 +1,13 @@
-import React from 'react';
 import useReatings from '../../hooks/useReatings';
 import ReviewCard from '../ReviewCard/ReviewCard';
 import './Reviews.css'
 
+
 const Reviews = () => {
-    const [reatings, setreatings] = useReatings();
+    const [reatings] = useReatings();
     return (
-        <div>
-            <h1>Costomer Review</h1>
+            <div>
+            <h1>Costomer Review({reatings.length})</h1>
             <div>
                 <div className="review-container">
                 {

@@ -1,11 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import useReatings from '../../hooks/useReatings';
 import headerImg from "../img/header.jpg"
-import Review from '../Reviews/Reviews';
+import ReviewCard from '../ReviewCard/ReviewCard';
 import './Home.css'
-// import '../img/header.jpg'
 
 const Home = () => {
+    const [reatings] = useReatings();
     return (
         <div>
             <div className='flexible-container'>
@@ -17,7 +18,21 @@ const Home = () => {
                     <img src={headerImg} alt="" />
                 </div>
             </div>
-            <Review></Review>
+
+            <div>
+            <h1>Costomer Review({reatings.length})</h1>
+            <div>
+                <div className="review-container">
+                {
+                    reatings.slice(0, 3).map(reating => <ReviewCard
+                    key={reating.id}
+                    reating={reating}
+                    >
+                    </ReviewCard>)
+                }
+                </div>
+            </div>
+        </div>
             <Link to='/review'>
                 <button className='review-btn'>See All Reviews</button>
             </Link>
